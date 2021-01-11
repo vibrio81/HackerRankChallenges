@@ -10,7 +10,7 @@ Searching through an array list on xth and yth plain to find the .nextInt
 Java Loops I
   cycle through numbers (2) multiplying by increments of 1.
   i.e.  
-  "2 * 1"
-  "2 * 2"
-  "2 * 3"
+  2 * 1,
+  2 * 2,
+  2 * 3
   ...
