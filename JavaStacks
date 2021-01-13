@@ -1,0 +1,44 @@
+import java.util.*;
+class Solution{
+    
+    public static void main(String []argh)
+    {
+        Scanner sc = new Scanner(System.in);
+        
+        while (sc.hasNext()) {
+            String input=sc.next();
+            //Complete the code
+            Stack<Character> checker = new Stack<>();
+            for (int i = 0; i<input.length(); i++){
+                
+                if (!checker.isEmpty()){
+                    switch(input.charAt(i)){
+                        case '}' : if (checker.peek() == '{'){
+                            checker.pop();
+                            break;
+                        }
+                        
+                        case ')' : if(checker.peek() == '('){
+                            checker.pop();
+                            break;
+                        }
+                        
+                        case ']' : if(checker.peek() == '['){
+                            checker.pop();
+                            break;
+                            
+                        }
+                        default : checker.push(input.charAt(i));
+                            
+                        }
+                    } else {checker.push(input.charAt(i));
+                    
+                  }
+                    
+                } System.out.println(checker.isEmpty());
+            }
+            
+            
+        } 
+        
+    }
